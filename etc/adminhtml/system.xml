@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author MageBild Team
+ * @copyright Copyright (c) 2019 Magebild
+ * @package Magebild_Base
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="magebild" translate="label" sortOrder="10">
+            <label>Magebild Extensions</label>
+        </tab>
+        <section id="magebild_base" translate="label" type="text" sortOrder="-100" showInDefault="1" showInWebsite="1">
+            <label><![CDATA[Extensions Information]]></label>
+            <tab>magebild</tab>
+            <resource>Magebild_Base::others</resource>
+            <group id="extensions" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <label>Installed Extensions</label>
+                <frontend_model>Magebild\Base\Block\Adminhtml\Extensions</frontend_model>
+            </group>
+        </section>
+    </system>
+</config>

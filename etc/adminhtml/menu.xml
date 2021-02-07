@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author MageBild Team
+ * @copyright Copyright (c) 2019 Magebild
+ * @package Magebild_Base
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magebild::menu" title="Menu" module="Magebild_Base" sortOrder="10" resource="Magebild_Base::menu"/>
+        <add id="Magebild::features" title="Features" module="Magebild_Base" parent="Magebild::menu" sortOrder="1" resource="Magebild_Base::features"/>
+        <add id="Magebild::integration" title="Integrations" module="Magebild_Base" parent="Magebild::menu" sortOrder="1" resource="Magebild_Base::integration"/>
+        <add id="Magebild::others" title="Others" module="Magebild_Base" parent="Magebild::menu" sortOrder="2" resource="Magebild_Base::others"/>
+        <add id="Magebild::module_notifications" title="Module Information" module="Magebild_Base" parent="Magebild::others" sortOrder="2"
+             action="adminhtml/system_config/edit/section/magebild_base"
+             resource="Magebild_Base::others"/>
+    </menu>
+</config>

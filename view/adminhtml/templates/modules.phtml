@@ -1,0 +1,42 @@
+<?php
+/**
+ * @author MageBild Team
+ * @copyright Copyright (c) 2019 Magebild
+ * @package Magebild_Base
+ */
+
+/** @var \Magebild\Base\Block\Adminhtml\Extensions $block */
+$modules = $block->getModuleList();
+?>
+<div class="mbbase-extensions-block">
+    <h2 class="mbbase-title">
+        <?= $block->escapeHtml(__('Installed Extensions')) ?>
+    </h2>
+    <div class="mbbase-extensions-container">
+        <?php foreach ($modules as $module): ?>
+            <div class="mbbase-modules-block-container">
+                <div class="mbbase-module-title">
+                    <?= $block->escapeHtml($module['name']); ?>
+                </div>
+                <div class="mbbase-module-version">
+                    <?= $block->escapeHtml($module['version']); ?>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>
+<div class="mbbase-about-block">
+    <h2 class="mbbase-title">
+        <?= $block->escapeHtml(__('Developer Information')) ?>
+    </h2>
+    <div class="mbbase-about-container">
+        <div class="about-image-container">
+            <a href="http://bildcampaigns.com/" target="_blank"><img src="<?= $block->getViewFileUrl('Magebild_Base::images/bild.jpg'); ?>" alt="Magebild"></a>
+        </div>
+        <div class="about-description-container">
+            <p>Digital marketing consulting agency based in Cebu City, Philippines.</p>
+            <p>We help individuals, teams, and entrepreneurs learn and apply digital marketing in their careers and businesses to achieve personal, professional, and economic success</p>
+            <p>You may visit us at <a href="http://bildcampaigns.com/">www.bildcampaigns.com</a> or email us at <a href="mailto:bildcampaigns@gmail.com?cc=acmagebild@gmail.com">bildcampaigns@gmail.com</a></p>
+        </div>
+    </div>
+</div>

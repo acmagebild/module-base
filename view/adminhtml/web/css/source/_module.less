@@ -1,0 +1,56 @@
+@moduleDir: '/pub/static/adminhtml/Magento/backend/en_US/Magebild_Base/';
+
+.admin__menu #menu-magebild-menu > a:before{
+  content: url('@{moduleDir}images/logo.svg');
+}
+.admin__page-magebild-tab .admin__page-nav-title:before{
+  content: url('@{moduleDir}images/logo.svg');
+  vertical-align: middle;
+}
+.mbbase-extensions-block,.mbbase-about-block{
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    h2{
+        font-weight: bold;
+        font-size: 17px;
+        color: #303030;
+    }
+    .mbbase-extensions-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 164px);
+        justify-content: space-between;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+        .mbbase-modules-block-container{
+            display: inline;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #F3790A;
+            min-height: 50px;
+        }
+        .mbbase-module-title{
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 1px solid #F3790A;
+            padding-bottom: 5px;
+            justify-content: center;
+        }
+        .mbbase-module-version{
+            text-align: center;
+            padding-top: 5px;
+        }
+    }
+}
+.mbbase-about-container{
+    display:flex;
+    align-items: center;
+    .about-description-container,.about-image-container{
+        padding: 10px;
+        p {
+            font-size: 12px;
+        }
+    }
+}

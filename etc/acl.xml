@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author MageBild Team
+ * @copyright Copyright (c) 2019 Magebild
+ * @package Magebild_Base
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magebild_Base::menu" title="Magebild Extensions">
+                    <resource id="Magebild_Base::features" title="Features"/>
+                    <resource id="Magebild_Base::integration" title="Integrations"/>
+                    <resource id="Magebild_Base::others" title="Others"/>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
