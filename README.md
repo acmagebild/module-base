@@ -44,6 +44,10 @@ Attach your menu and shortcuts to the system configuration
 
 ## Changelog
 
+2.0.0
+
+- Update composer version dependency
+- Update PHP version dependency
 
 ## Compatibility
 
