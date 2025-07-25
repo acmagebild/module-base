@@ -8,6 +8,7 @@
 /** @var \Magebild\Base\Block\Adminhtml\Extensions $block */
 $modules = $block->getModuleList();
 ?>
+<?php if($modules): ?>
 <div class="mbbase-extensions-block">
     <h2 class="mbbase-title">
         <?= $block->escapeHtml(__('Installed Extensions')) ?>
@@ -40,3 +41,13 @@ $modules = $block->getModuleList();
         </div>
     </div>
 </div>
+<?php else: ?>
+<div class="mbbase-extensions-block">
+    <h2 class="mbbase-title">
+        <?= $block->escapeHtml(__('Installed Extensions')) ?>
+    </h2>
+    <div class="mbbase-extensions-container">
+        <p><?= __('No extensions found.'); ?></p>
+    </div>
+</div>
+<?php endif; ?>

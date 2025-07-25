@@ -47,5 +47,6 @@ Attach your menu and shortcuts to the system configuration
 
 ## Compatibility
 
+- Magento 2.4 :heavy_check_mark:
 - Magento 2.3 :heavy_check_mark:
 - Magento 2.2 :heavy_check_mark:

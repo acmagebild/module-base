@@ -2,10 +2,11 @@
     "name": "magebild/module-base",
     "description": "Magebild base module",
     "require": {
-        "php": "~7.0.0|~7.1.0|~7.2.0|~7.3.0"
+        "php": "^8.1",
+        "composer-runtime-api": "^2"
     },
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "autoload": {
         "files": [
             "registration.php"
